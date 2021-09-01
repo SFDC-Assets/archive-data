@@ -1,5 +1,5 @@
 # Create the demo org
-sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix admin -o archive.demo
+sfdx shane:org:create -f config/project-scratch-def.json -d 3 -s --wait 60 --userprefix admin -o archive.demo
 # sfdx force:org:create -f config/project-scratch-def.json --setalias archive-data --setdefaultusername
 
 # Push the security settings first, otherwise the push will fail.
