@@ -1,6 +1,5 @@
 # Create the demo org
-sfdx shane:org:create -f config/project-scratch-def.json -d 3 -s --wait 60 --userprefix admin -o archive.demo
-# sfdx force:org:create -f config/project-scratch-def.json --setalias archive-data --setdefaultusername
+sf demoutil org create scratch -f config/project-scratch-def.json -d 5 -s -p admin -e archive.demo -w 60
 
 # Push the security settings first, otherwise the push will fail.
 sf project deploy start -m Settings:Security
